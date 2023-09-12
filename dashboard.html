@@ -1,0 +1,62 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+
+
+
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="dazzle/css/dashbboard.css">
+
+   <!-- script
+  ================================================== -->
+   <script src="dazzle/js/modernizr.js"></script>
+   <script src="dazzle/js/pace.min.js"></script>
+   <script src="dazzle/js/register.js"></script>
+
+   <link rel="icon" type="image/png" href="dazzle/dazzle.png">
+</head>
+<body>
+  <video autoplay muted loop id="video-bg">
+    <source src="dazzle/bg-mp3/login-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <div class="container">
+    <h1>Your Official Account</h1>
+    <div id="display-info"></div>
+    <button class="btn"><a href="./dazzle/admin-dashboard-1/index.html">Go to admin</a></button>
+  </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+  // Parse the query string
+  var queryString = window.location.search.substring(1);
+  var params = new URLSearchParams(queryString);
+
+  // Display the form data in the dashboard
+  var displayInfo = document.getElementById("display-info");
+  displayInfo.innerHTML =
+    "<strong>Name:</strong> " +
+    params.get("fullName") +
+    "<br><strong>Email:</strong> " +
+    params.get("email") +
+    "<br><strong>Phone Number:</strong> " +
+    params.get("phoneNumber") +
+    "<br><strong>Birthdate:</strong> " +
+    params.get("birthdate") +
+    "<br><strong>Gender:</strong> " +
+    params.get("gender") +
+    "<br><strong>Address:</strong> " +
+    params.get("address");
+});
+
+    </script>
+</body>
+</html>

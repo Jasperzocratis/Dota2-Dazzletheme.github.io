@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dazzle | Register</title>
+
+
+    <!-- CSS
+   ================================================== -->
+   <link rel="stylesheet" href="css/base.css">
+   <link rel="stylesheet" href="css/vendor.css">
+   <link rel="stylesheet" href="css/main.css">
+   <link rel="stylesheet" href="dazzle/css/register.css">
+
+   <!-- script
+  ================================================== -->
+   <script src="dazzle/js/modernizr.js"></script>
+   <script src="dazzle/js/pace.min.js"></script>
+   <script src="dazzle/js/register.js"></script>
+
+   <link rel="icon" type="image/png" href="dazzle/dazzle.png">
+</head>
+<body>
+  <video autoplay muted loop>
+    <source src="dazzle/bg-mp3/login-bg.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="wrapper">
+  <form action="#" class="form" onsubmit="return redirectToDashboard()">
+      <h1>
+          <img src="dazzle/images/login/images/Dota-2-Logo.png" alt="Logo" /> Register Here
+      </h1>
+      <div class="input-field">
+          <input type="text" id="fullName" required>
+          <label>Enter your full name</label>
+      </div>
+      <div class="input-field">
+          <input type="email" id="email" required>
+          <label>Enter email address</label>
+      </div>
+      <div class="column">
+        <div class="input-field">
+          <input type="number" id="phoneNumber" required>
+          <label>Enter phone number</label>
+      </div>
+      <div class="input-field">
+        <input type="date" id="birthdate">
+        <label>Enter birthdate</label>
+      </div>
+      </div>
+      <div class="gender-box">
+        <h3>Gender</h3>
+        <div class="gender-option">
+          <div class="gender">
+            <input type="radio" id="check-male" name="gender" value="Male" checked />
+            <label for="check-male">Male</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-female" name="gender" value="Female" />
+            <label for="check-female">Female</label>
+          </div>
+          <div class="gender">
+            <input type="radio" id="check-other" name="gender" value="Prefer not to say" />
+            <label for="check-other">Prefer not to say</label>
+          </div>
+        </div>
+      </div>
+      <div class="input-field">
+        <input type="text" id="address" required>
+        <label>Enter address</label>
+      </div>
+      
+      <button type="submit">Submit</button>
+     
+  </form>
+</div>
+
+
+</body>
+</html>
