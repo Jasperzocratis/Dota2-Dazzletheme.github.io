@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+
+
+         <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="icon" type="image/png" href="../dazzle.png">
+    <title>Dazzle | Admin Dashboard</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="toggle">
+                <div class="logo">
+                    <img src="images/logo.jpg">
+                    <h2>Dazzle<span class="danger">Dota 2</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">
+                        close
+                    </span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="index.html" class="active">
+                    <span class="material-icons-sharp">
+                        dashboard
+                    </span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="/dazzle/index.html">
+                    <span class="material-icons-sharp">
+                        cottage
+                    </span>
+                    <h3>Home</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+                    <h3>History</h3>
+                </a>
+                <a href="../admin-dashboard-2/index.html">
+                    <span class="material-icons-sharp">
+                        insights
+                    </span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        mail_outline
+                    </span>
+                    <h3>Tickets</h3>
+                    <span class="message-count">27</span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        inventory
+                    </span>
+                    <h3>Sale List</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        report_gmailerrorred
+                    </span>
+                    <h3>Reports</h3>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        settings
+                    </span>
+                    <h3>Settings</h3>
+                </a>
+                <a href="/register.html">
+                    <span class="material-icons-sharp">
+                        add
+                    </span>
+                    <h3>New Login</h3>
+                </a>
+                <a href="/login.html">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            <h1>Dashboard</h1>
+            
+            <!-- Recent Users Table -->
+            <div class="recent-users">
+                <h2>Welcome to Dashboard, Jasper!</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email address</th>
+                            <th>Phone number</th>
+                            <th>Birthdate</th>
+                            <th>Gender</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Jasper Kim J. Sale</th>
+                            <th>jaspersale2003@gmail.com</th>
+                            <th>09977947171</th>
+                            <th>11/09/2003</th>
+                            <th>Male</th>
+                        </tr>
+                        <tr>
+                            <th>Sale Jasper Kim</th>
+                            <th>sale.jasper@dnsc.edu.ph</th>
+                            <th>09997534745</th>
+                            <th>12/02/2001</th>
+                            <th>Male</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- End of Recent Users -->
+
+        </main>
+        <!-- End of Main Content -->
+
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="nav">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">
+                        menu
+                    </span>
+                </button>
+                <div class="dark-mode">
+                    <span class="material-icons-sharp active">
+                        light_mode
+                    </span>
+                    <span class="material-icons-sharp">
+                        dark_mode
+                    </span>
+                </div>
+
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey, <b>Jasperzocratis</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="images/profile-1.jpg">
+                    </div>
+                </div>
+
+            </div>
+            <!-- End of Nav -->
+
+            <div class="user-profile">
+                <div class="logo">
+                    <img src="images/ghost-logo.jpg">
+                    <h2>Jasperzocratis</h2>
+                    <p>Front End Web Developer</p>
+                </div>
+            </div>
+
+            <div class="reminders">
+                <div class="header">
+                    <h2>Notification</h2>
+                    <span class="material-icons-sharp">
+                        notifications_none
+                    </span>
+                </div>
+
+                <div class="notification">
+                    <div class="notif">
+                        <img src="images/faceless-void.jpg" alt="notification">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Faceless Void</h3>
+                            <small class="text_muted">
+                                Hey! The time is the cruelest cut.
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification deactive">
+                    <div class="notif">
+                        <img src="images/shadow.jpg" alt="">
+                    </div>
+                    <div class="content">
+                        <div class="info">
+                            <h3>Shadow Fiend</h3>
+                            <small class="text_muted">
+                                Shadows take us.
+                            </small>
+                        </div>
+                        <span class="material-icons-sharp">
+                            more_vert
+                        </span>
+                    </div>
+                </div>
+
+                <div class="notification add-reminder">
+                    <div>
+                        <span class="material-icons-sharp">
+                            add
+                        </span>
+                        <h3>Add Friend</h3>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <script src="order.js"></script>
+    <script src="index.js"></script>
+</body>
+
+</html>
